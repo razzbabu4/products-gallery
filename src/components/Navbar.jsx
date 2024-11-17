@@ -1,7 +1,7 @@
-// import useProduct from "../hooks/useProduct";
+import useProduct from "../hooks/useProduct";
 
 const Navbar = () => {
-    // const { setSearchQuery } = useProduct()
+    const { setSearchQuery } = useProduct()
     return (
         <nav className="max-w-screen-2xl mx-auto">
             <div className="navbar p-4 bg-stone-950/30 flex justify-between items-center">
@@ -15,7 +15,7 @@ const Navbar = () => {
                             type="text"
                             placeholder="Search products..."
                             className="p-2 rounded-md border border-gray-600"
-                            // onChange={(e) => setSearchQuery(e.target.value)}
+                            onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </div>
                     <div className="dropdown dropdown-end">
