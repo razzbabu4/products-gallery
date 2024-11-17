@@ -1,10 +1,16 @@
+import Filters from "./components/Filter";
+import Navbar from "./components/Navbar"
+import ProductGallery from "./pages/ProductGallery";
 
 function App() {
- 
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <Navbar/>
+      <div className="max-w-screen-2xl mx-auto px-4 lg:p-0">
+        <Filters/>
+        <ProductGallery />
+      </div>
+    </div>
   )
 }
 
