@@ -15,7 +15,7 @@ const ProductProvider = ({ children }) => {
             filterCategory ? product.category === filterCategory : true
         )
         .filter((product) =>
-            searchQuery ? product.name.toLowerCase().includes(searchQuery.toLowerCase()) : true
+            searchQuery === "" || product.name.toLowerCase().includes(searchQuery.toLowerCase())
         )
         .sort((a, b) => {
             if (sortOption === "priceAsc") return a.price - b.price;
@@ -23,7 +23,7 @@ const ProductProvider = ({ children }) => {
             if (sortOption === "popularity") return b.popularity - a.popularity;
             return 0;
         });
- 
+
 
     useEffect(() => {
         const getAllProduct = generateProducts(21);
@@ -38,7 +38,6 @@ const ProductProvider = ({ children }) => {
         setFilterCategory,
         setSortOption,
         setSearchQuery
-       
     }
 
     return (

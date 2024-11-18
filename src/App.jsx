@@ -1,4 +1,5 @@
 import Filters from "./components/Filter";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar"
 import ProductGallery from "./pages/ProductGallery";
 
@@ -10,6 +11,7 @@ function App() {
         <Filters/>
         <ProductGallery />
       </div>
+      <Footer/>
     </div>
   )
 }
