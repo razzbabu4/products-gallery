@@ -1,4 +1,5 @@
 import useProduct from "../hooks/useProduct";
+import PropTypes from 'prop-types';
 
 const ProductCard = ({ product }) => {
     const { setSelectedProduct } = useProduct();
@@ -10,13 +11,17 @@ const ProductCard = ({ product }) => {
         <p className="text-green-500 font-bold">${product.price}</p>
         <button
           onClick={() => setSelectedProduct(product)}
-          className="mt-2 bg-blue-500 text-white p-2 rounded btn"
+          className="mt-2 btn-accent text-white p-2 rounded btn"
         >
           View Details
         </button>
       </div>
     );
   };
+
+  ProductCard.propTypes = {
+    product : PropTypes.object
+  }
   
   export default ProductCard;
   

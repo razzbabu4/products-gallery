@@ -1,7 +1,9 @@
-import { createContext, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { generateProducts } from "../utils/generateProduct";
+import PropTypes from 'prop-types';
+import ProductContext from "./ProductContext";
 
-export const ProductContext = createContext(null);
+// export const ProductContext = createContext(null);
 
 const ProductProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
@@ -46,5 +48,9 @@ const ProductProvider = ({ children }) => {
         </ProductContext.Provider>
     );
 };
+
+ProductProvider.propTypes = {
+    children: PropTypes.any
+}
 
 export default ProductProvider;
