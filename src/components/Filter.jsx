@@ -8,7 +8,9 @@ const Filters = () => {
                 <option value="">All Categories</option>
                 <option value="Electronics">Electronics</option>
                 <option value="Books">Books</option>
-                <option value="Clothing">Cloths</option>
+                <option value="Cloths">Cloths</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Furniture">Furniture</option>
             </select>
 
             <select onChange={(e) => setSortOption(e.target.value)} className="p-2 rounded text-white">

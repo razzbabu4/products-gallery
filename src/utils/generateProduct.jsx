@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 import { v4 as uuidv4 } from 'uuid'; // Import UUID function
 
 export const generateProducts = (count = 20) => {
-  const categories = ['Electronics', 'Clothing', 'Furniture', 'Books', 'Toys', 'Groceries'];
+  const categories = ['Electronics', 'Cloths', 'Furniture', 'Books', 'Toys', 'Groceries'];
 
   return Array.from({ length: count }, () => ({
     id: uuidv4(), // Use UUID package

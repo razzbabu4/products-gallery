@@ -1,4 +1,4 @@
-// import Modal from "../components/Modal";
+import Modal from "../components/Modal";
 import ProductCard from "../components/ProductCard";
 import useProduct from "../hooks/useProduct";
 
@@ -12,7 +12,7 @@ const ProductGallery = () => {
                     <ProductCard key={product.id} product={product} />
                 ))}
             </div>
-            {/* <Modal/> */}
+            <Modal/>
         </div>
     );
 };
