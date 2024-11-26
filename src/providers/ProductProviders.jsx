@@ -50,7 +50,7 @@ const ProductProvider = ({ children }) => {
 };
 
 ProductProvider.propTypes = {
-    children: PropTypes.any
+    children: PropTypes.node
 }
 
 export default ProductProvider;

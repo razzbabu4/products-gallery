@@ -10,7 +10,7 @@ const Modal = () => {
     <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
       <div className="bg-white p-6 rounded shadow-lg w-96 md:w-[600px]">
         <div className="flex gap-4 w-full justify-center items-center">
-          <img src={selectedProduct.image} alt="product image"  className="h-44 w-1/2 object-cover hidden md:flex"/>
+          <img src={selectedProduct.image} alt="product image" className="h-44 w-1/2 object-cover hidden md:flex" />
           <div className="md:w-1/2">
             <h2 className="text-xl font-bold text-stone-800">{selectedProduct.name}</h2>
             <p className="text-gray-800">{selectedProduct.description}</p>

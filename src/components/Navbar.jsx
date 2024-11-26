@@ -3,8 +3,8 @@ import useProduct from "../hooks/useProduct";
 const Navbar = () => {
     const { setSearchQuery } = useProduct()
     return (
-        <nav className="max-w-screen-2xl mx-auto">
-            <div className="navbar p-4 bg-stone-950/30 flex justify-between items-center">
+        <nav className="max-w-screen-xl mx-auto">
+            <div className="navbar p-4 bg-stone-950/30 flex justify-between items-center rounded-b-lg">
                 <div className="flex-1">
                     <a className="btn btn-ghost text-2xl text-white hidden md:flex">Product Gallery</a>
                     <a className="btn btn-ghost text-2xl text-white md:hidden">PG</a>
